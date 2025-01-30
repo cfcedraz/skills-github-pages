@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Presentes - Jéssica e Caio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Lista de Presentes de Casamento</h1>
+        <h2>Jéssica Gabrielly e Caio Felipe</h2>
+    </header>
+
+    <main>
+        <section class="lista-presentes">
+            <h2>Escolha um presente:</h2>
+            <div class="categorias">
+                <!-- Cozinha -->
+                <div class="categoria">
+                    <h3>Cozinha</h3>
+                    <ul>
+                        <li data-item="Jogo de panelas inox ou antiaderente">
+                            <span>Jogo de panelas inox ou antiaderente</span>
+                            <button class="escolher-btn">Escolher</button>
+                        </li>
+                        <li data-item="Conjunto de talheres">
+                            <span>Conjunto de talheres</span>
+                            <button class="escolher-btn">Escolher</button>
+                        </li>
+                        <!-- Adicione os outros itens da cozinha aqui -->
+                    </ul>
+                </div>
+
+                <!-- Eletrodomésticos -->
+                <div class="categoria">
+                    <h3>Eletrodomésticos</h3>
+                    <ul>
+                        <li data-item="Micro-ondas">
+                            <span>Micro-ondas</span>
+                            <button class="escolher-btn">Escolher</button>
+                        </li>
+                        <li data-item="Geladeira">
+                            <span>Geladeira</span>
+                            <button class="escolher-btn">Escolher</button>
+                        </li>
+                        <!-- Adicione os outros itens de eletrodomésticos aqui -->
+                    </ul>
+                </div>
+
+                <!-- Adicione as outras categorias aqui -->
+            </div>
+        </section>
+
+        <!-- Modal para coletar dados -->
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Informe seus dados</h2>
+                <form id="form-presente">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required>
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+                    <button type="submit">Confirmar</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Lista de Presentes - Jéssica e Caio</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
